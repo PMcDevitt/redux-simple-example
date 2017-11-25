@@ -1,0 +1,21 @@
+.main-container {
+  width: 350px;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+}
+
+.component-container {
+  width: inherit;
+  margin: auto;
+}
+
+span {
+  margin: .5em;
+  font-size: 2em;
+}
+
+button {
+  padding: 0 .5em 0 .5em;
+  font-size: 2em;
+}
