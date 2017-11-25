@@ -17,9 +17,9 @@ class ReduxCounter extends React.Component {
       <div className='main-container'>
         <h2>Redux Counter</h2>
         <div className='component-container'>
-          <button onClick={this.decrement}>-</button>
-          <span>{this.props.count}</span>
-          <button onClick={this.increment}>+</button>
+          <button className='ReduxCounter-decrease' id='decrease' onClick={this.decrement}>-</button>
+          <span className='ReduxCounter-value'>{this.props.count}</span>
+          <button className='ReduxCounter-increase' onClick={this.increment}>+</button>
         </div>
       </div>
     )

@@ -1,0 +1,26 @@
+{
+  "tests": "./test/*_test.js",
+  "timeout": 2000,
+  "output": "./test/output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:3000",
+      "browser": "firefox",
+      "restart": false,
+      "smartWait": 2000,
+       "timeouts": {
+         "script": 60000,
+         "page load": 10000
+       }
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "include": {},
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "name": "redux-simple-example"
+}

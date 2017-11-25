@@ -1,0 +1,51 @@
+{
+  "output": "test_ui/output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:3000",
+      "browser": "phantomjs",
+      "restart": false,
+      "windowSize": "1280x720",
+      "desiredCapabilities": {
+        "phantomjs.binary.path": "./node_modules/.bin/phantomjs"
+      }
+    },
+    "TabHelper": {
+      "require": "./common/utils/tabhelper_helper.js"
+    }
+  },
+  "include": {},
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "test_ui/*_test.js",
+  "timeout": 10000,
+  "name": "PremiumExplanationTool",
+  "multiple": {
+    "launch": {
+      "grep": "01.01.",
+      "browsers": [
+        "phantomjs"
+      ]
+    },
+    "details1": {
+      "grep": "02.01.",
+      "browsers": [
+        "phantomjs"
+      ]
+    },
+    "details2": {
+      "grep": "02.02.",
+      "browsers": [
+        "phantomjs"
+      ]
+    },
+    "error": {
+      "grep": "03.01.",
+      "browsers": [
+        "phantomjs"
+      ]
+    }
+  }
+}
